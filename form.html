@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <div id = " form-container">
+            <div class="page-header text-center">
+                <h2>CIAO!</h2>
+                <div id="status-button" class="text-center">
+                    <a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
+                    <a ui-sref-active="active" ui-sref=".profile"><span>2</span> interest</a>
+                    <a ui-sref-active="active" ui-sref=".profile"><span>3</span> Payment</a>
+                </div>
+            </div>
+
+            <form id="signup-form" ng-submit="processForm()">   <!-- uso ng-submit per catturare il form e usare la sua funzione Angular -->
+                <div id="form-views" ui-view ></div>
+            </form>
+        </div>
+
+        <pre>
+            {{ formData}}
+        </pre>
+    </div>
+</div>
